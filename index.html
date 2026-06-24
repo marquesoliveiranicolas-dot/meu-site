@@ -22,7 +22,7 @@
  }
  img {
  width: 80px;
- height: 80px;
+ height: 100px;
  }
     </style>
 </head>
@@ -46,6 +46,11 @@
 
 <script>
 const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+
+function botaoClicado () {
+    console.log("fui clicado");
+}
 </script>
 
 </html>
