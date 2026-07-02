@@ -47,8 +47,8 @@
 </body>
 
 <script>
-const botoes = document.querySelector("button");
-botoes.forEach(function(botao)) {
+const botoes = document.querySelectorAll("button");
+botoes.forEach(function(botao) {
     botao.addEventListener("click", botaoClicado);
 
 function botaoClicado () {
@@ -57,7 +57,7 @@ console.botaoClicado ()
     let texto = botao.querySelector("span");
     texto.textContent++;
 }
- } ;
+});
 </script>
 
 </html>
